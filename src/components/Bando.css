@@ -1,0 +1,22 @@
+.iconeList{
+position: fixed;
+height: 20%;
+width:75px;
+z-index: 1;
+top:6.4em;
+overflow:hidden;
+border-top-right-radius : 50px;
+border-bottom-right-radius : 50px;
+margin-top : 160px;
+background-color: rgb(33, 33, 75);
+display:flex;
+flex-direction:column;
+justify-content : space-between
+}
+
+
+.bandoContainer{
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 220px;
+}
