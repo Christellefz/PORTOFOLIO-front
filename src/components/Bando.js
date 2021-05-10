@@ -13,6 +13,14 @@ const Bando = () => {
           <AiFillGithub size='x5' />
         </li>
       </ul>
+      <ul className='smallIconeList'>
+        <li>
+          <AiFillLinkedin size='x3' />
+        </li>
+        <li>
+          <AiFillGithub size='x3' />
+        </li>
+      </ul>
     </div>
   )
 }

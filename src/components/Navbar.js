@@ -1,6 +1,7 @@
 import './Navbar.css'
 
 import BG from '../Images/BG.jpg'
+import Burger from './Burger.js'
 import { Link } from 'react-router-dom'
 import { Parallax } from 'react-parallax'
 
@@ -10,9 +11,9 @@ const Navbar = () => {
       <div className='header'>
         <Parallax bgImage={BG} strength={-200}>
           <div className='header-section'>
-            <div className='navItems'>
+            <nav className='navItems'>
               <ul className='navlist'>
-                <Link to='/home' className='link'>
+                <Link to='/' className='link'>
                   <li>Accueil</li>
                 </Link>
                 <Link to='/about' className='link'>
@@ -28,10 +29,11 @@ const Navbar = () => {
                   <li>Contact</li>
                 </Link>
               </ul>
-            </div>
+            </nav>
           </div>
         </Parallax>
       </div>
+      <Burger />
     </div>
   )
 }

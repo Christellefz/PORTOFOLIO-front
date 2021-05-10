@@ -1,0 +1,29 @@
+.parcourContainer{
+  color:aliceblue;
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+  align-items:top;
+  padding:0;
+  margin-right: 15%;
+  margin-left: 15%;
+  background-color: #282c34;
+}
+.titleParcours{
+  display: flex;
+  justify-content: flex-start
+}
+
+.degreeList{
+  display: flex;
+  align-items: flex-start
+}
+
+.liparc {
+  list-style-type: "💼";
+  align-items: flex-start;
+}
+.lipro {
+  list-style-type: "🎓";
+  align-items: flex-start;
+}

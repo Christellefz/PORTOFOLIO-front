@@ -10,12 +10,14 @@
   font-size:30px;
   display : flex;
   justify-content : flex-end;
+  flex-wrap: wrap;
 }
 .navlist{
   list-style: none;
   display : flex;
   justify-content : flex-end;
   flex-direction: row;
+  flex-wrap: wrap;
   
 }
 
@@ -34,4 +36,12 @@ li {
 ul{
   display : flex;
   justify-content : flex-end;
+  list-style: none;
+}
+
+@media screen and (max-width: 500px){
+
+  .header{
+    display : none
+  }
 }

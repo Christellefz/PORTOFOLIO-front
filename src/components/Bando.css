@@ -11,12 +11,41 @@ margin-top : 160px;
 background-color: rgb(33, 33, 75);
 display:flex;
 flex-direction:column;
-justify-content : space-between
+justify-content : space-between;
+padding:0px;
+z-index: 1;
 }
-
+.smallIconeList{
+  display:none;
+}
 
 .bandoContainer{
   position: -webkit-sticky;
   position: sticky;
-  margin-top: 220px;
+}
+@media screen and (max-width:500px){
+.bandoContainer{
+  width:10px;
+}
+.smallIconeList{
+width:45px;
+display:flex;
+flex-direction:column;
+justify-content : center;
+position: fixed;
+height: 20%;
+z-index: 1;
+top:4.4em;
+overflow:hidden;
+border-top-right-radius : 50px;
+border-bottom-right-radius : 50px;
+
+background-color: rgb(33, 33, 75);
+text-align: left;
+padding:0px;
+
+}
+.iconeList{
+  display:none;
+}
 }
