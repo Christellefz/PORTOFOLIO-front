@@ -24,7 +24,6 @@ const App = withRouter(({ location }) => {
         <Route path='/ProBackground'>
           <Parcours />
         </Route>
-        
         <Route path='/Contact'>
           <Contact />
         </Route>
