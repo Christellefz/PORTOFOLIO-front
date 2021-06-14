@@ -104,7 +104,7 @@ const Contact = () => {
       </form>
       <div className='blockform'>
         <Map />
-        <p>Tel: 06 66 36 42 27</p> 
+        <p>Tel: 06 66 36 42 27</p>
         <p>Mail: christellefz@yahoo.fr</p>
       </div>
     </div>

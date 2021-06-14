@@ -1,19 +1,57 @@
 import './About.css'
 
+import { useEffect, useState } from 'react'
+
 import Honor from '../Images/Honor.jpg'
 import Moi from '../Images/Moi.jpg'
 
 const About = () => {
+  const [letter, setLetter] = useState([])
+  let array = [
+    'développeuse',
+    'créatrice',
+    'conseillère',
+    'autodidacte',
+    'animal Lover <3'
+  ]
+  let wordIndex = 0
+  let letterIndex = 0
+
+  useEffect(() => {
+    loop()
+  }, [])
+
+  const createLetter = () => {
+    setLetter(letter => [...letter, array[wordIndex][letterIndex]])
+  }
+  const loop = () => {
+    setTimeout(() => {
+      if (wordIndex >= array.length) {
+        wordIndex = 0
+        letterIndex = 0
+      } else if (letterIndex < array[wordIndex].length) {
+        createLetter()
+        letterIndex++
+        loop()
+      } else {
+        wordIndex++
+        letterIndex = 0
+        setLetter([])
+        loop()
+        setTimeout(() => {
+          loop()
+        }, 2800)
+      }
+    }, 100)
+  }
+
   return (
     <div className='aboutContainer'>
       <h1 className='title1'>Qui suis-je?</h1>
       <div className='whoAmI'>
-        <p className='pstyle'>
-          lorem ipsum dolor sit amet, consectetur adip jzfg oue ruihfbiê aprhgîz
-          eufhizhzei ze fgvboz aufgbp hbpiz eriqguber ggedzhfbzp areuyf gbepuyg
-          vbe irgbn eiugv qejgbe quvhbg gjrhihbiupgi_pqe_ygvbipeq gvbie
-          auvbhiêauvbiea^rueri{' '}
-        </p>
+        <h3>Je suis : </h3>
+        <h3>{letter}</h3>
+
         <img className='Moi' src={Moi}></img>
       </div>
       <h1 className='title1'>Mes Valeurs de Développeur</h1>
