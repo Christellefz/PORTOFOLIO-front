@@ -8,6 +8,7 @@ import Contact from './screen/Contact.js'
 import Home from './screen/Home'
 import Navbar from './components/Navbar'
 import Parcours from './screen/Parcours.js'
+import StripeContainer from './components/StripeContainer'
 
 const App = withRouter(({ location }) => {
   return (
@@ -26,6 +27,9 @@ const App = withRouter(({ location }) => {
         </Route>
         <Route path='/Contact'>
           <Contact />
+        </Route>
+        <Route path='/don'>
+          <StripeContainer />
         </Route>
       </Switch>
     </div>

@@ -29,6 +29,7 @@ const About = () => {
       if (wordIndex >= array.length) {
         wordIndex = 0
         letterIndex = 0
+        loop()
       } else if (letterIndex < array[wordIndex].length) {
         createLetter()
         letterIndex++
@@ -38,20 +39,15 @@ const About = () => {
         letterIndex = 0
         setLetter([])
         loop()
-        setTimeout(() => {
-          loop()
-        }, 2800)
       }
-    }, 100)
+    }, 200)
   }
 
   return (
     <div className='aboutContainer'>
       <h1 className='title1'>Qui suis-je?</h1>
       <div className='whoAmI'>
-        <h3>Je suis : </h3>
-        <h3>{letter}</h3>
-
+        <h3>Je suis {letter} </h3>
         <img className='Moi' src={Moi}></img>
       </div>
       <h1 className='title1'>Mes Valeurs de Développeur</h1>

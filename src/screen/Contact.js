@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 
 import Map from '../components/Map'
 import emailjs from 'emailjs-com'
+import { init } from 'emailjs-com'
 
 const Contact = () => {
   const [name, setName] = useState('')
@@ -14,10 +15,10 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-
+    //init('user_iVVjto43c3CxPjXPNC9Me')
     emailjs
       .send(
-        'service_wd3ldg3',
+        'service_cm4blte',
         'template_ao182af',
         {
           name,
@@ -28,9 +29,8 @@ const Contact = () => {
         },
         'user_iVVjto43c3CxPjXPNC9Me'
       )
-
       .then(res => {
-        console.log('success !', res)
+        console.log('success !', res.status)
         setName('')
         setCompany('')
         setPhone('')
