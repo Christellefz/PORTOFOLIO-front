@@ -15,8 +15,12 @@ justify-content : space-between;
 padding:0px;
 z-index: 1;
 }
+li {
+  color:rgb(235, 202, 148);
+}
 .smallIconeList{
   display:none;
+  color : rgb(235, 202, 148);
 }
 
 .bandoContainer{
@@ -47,5 +51,6 @@ padding:0px;
 }
 .iconeList{
   display:none;
+  color : rgb(235, 202, 148);
 }
 }

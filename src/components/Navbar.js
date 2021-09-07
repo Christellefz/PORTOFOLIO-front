@@ -14,22 +14,22 @@ const Navbar = () => {
             <nav className='navItems'>
               <ul className='navlist'>
                 <Link to='/' className='link'>
-                  <li>Accueil</li>
+                  <li className='navli'>Accueil</li>
                 </Link>
                 <Link to='/about' className='link'>
-                  <li>A Propos</li>
+                  <li className='navli'>A Propos</li>
                 </Link>
                 <Link to='/ProBackground' className='link'>
-                  <li>Parcours</li>
+                  <li className='navli'>Parcours</li>
                 </Link>
                 <Link to='/skills' className='link'>
-                  <li>Compétences</li>
+                  <li className='navli'>Compétences</li>
                 </Link>
                 <Link to='/contact' className='link'>
-                  <li>Contact</li>
+                  <li className='navli'>Contact</li>
                 </Link>
                 <Link to='/don' className='link'>
-                  <li>Don</li>
+                  <li className='navli'>Don</li>
                 </Link>
               </ul>
             </nav>

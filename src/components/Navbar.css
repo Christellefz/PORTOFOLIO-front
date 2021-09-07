@@ -18,10 +18,10 @@
   justify-content : flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-  
+  list-style: none;
 }
 
-li {
+.navli {
   list-style : none;
   color : rgb(235, 202, 148);
   padding : 15px;
@@ -33,11 +33,7 @@ li {
   outline: none;
 }
 
-ul{
-  display : flex;
-  justify-content : flex-end;
-  list-style: none;
-}
+
 
 @media screen and (max-width: 500px){
 
