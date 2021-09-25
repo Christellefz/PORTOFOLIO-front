@@ -1,3 +1,11 @@
 .CarouselContainer{
-display: inline;
+  display: inline;
+  box-sizing: border-box;
+  width: 80vw;
 }
+.imgContainer {
+  border: 5px ridge rgb(235, 202, 148);
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+

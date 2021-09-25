@@ -1,4 +1,5 @@
 import './About.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import { useEffect, useState } from 'react'
 

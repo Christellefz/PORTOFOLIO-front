@@ -24,9 +24,9 @@ const Slider = () => {
     }
   ]
   return (
-    <Carousel className='CarouselContainer'>
+    <Carousel className='CarouselContainer' autoPlay style='width: 80%;'>
       {dataCarousel.map(slide => (
-        <div key={slide.id}>
+        <div key={slide.id} className='imgContainer'>
           <img src={slide.image}></img>
           <div className='overlay'>
             <h2 className='overlay_title'>{slide.text}</h2>
