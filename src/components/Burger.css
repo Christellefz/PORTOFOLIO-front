@@ -3,26 +3,29 @@
 }
 .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  list-style: inside;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 768px){
 .navigation{
   display: flex;
+  flex-wrap: wrap;
 }
 body
 {
   margin: 0;
   padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
+  background: #4b4040;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
   #menuToggle
   {
-    display: block;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
     position: relative;
     top: 20px;
     left: 20px;
@@ -37,20 +40,15 @@ body
   {
     text-decoration: none;
     color: rgb(235, 202, 148);
-    
+    padding-left: 0.5em;
     transition: color 0.3s ease;
   }
-  
-  #menuToggle li:hover
-  {
-    color: tomato;
-  }
-  
   
   #menuToggle input
   {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 40px;
     height: 32px;
     position: absolute;
@@ -70,7 +68,7 @@ body
    */
   #menuToggle span
   {
-    display: block;
+    display: flex;
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
@@ -130,31 +128,7 @@ body
    * Make this absolute positioned
    * at the top left of the screen
    */
-  #menu
-  {
-    flex-direction: column;
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    
-    background: #ededed;
-    
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
   
-  #menu li
-  {
-    padding: 10px 0;
-    font-size: 22px;
-  }
   
   /*
    * And let's slide it in from the left

@@ -27,7 +27,7 @@ li {
   position: -webkit-sticky;
   position: sticky;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:768px){
 .bandoContainer{
   width:10px;
 }
@@ -39,7 +39,7 @@ justify-content : center;
 position: fixed;
 height: 20%;
 z-index: 1;
-top:4.4em;
+top:10em;
 overflow:hidden;
 border-top-right-radius : 50px;
 border-bottom-right-radius : 50px;

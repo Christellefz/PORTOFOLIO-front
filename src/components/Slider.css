@@ -8,4 +8,13 @@
   margin-left: 15vw;
   margin-right: 15vw;
 }
+@media screen and (max-width:768px){
+  .imgContainer {
+  margin:0px
+  }
+  .overlay_title {
+    margin: 15px;
+  }
+}
+
 

@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className='header-section'>
             <nav className='navItems'>
               <ul className='navlist'>
-                <Link to='/' className='link'>
+                <Link exact to='/' className='link'>
                   <li className='navli'>Accueil</li>
                 </Link>
                 <Link to='/about' className='link'>

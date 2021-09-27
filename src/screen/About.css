@@ -16,14 +16,7 @@
   font-size:16px;
   background-color: #282c34;
   padding:0;
-}
-
-.honor{
-  height:30vh;
-  width: 30vw;
-  padding-top: 30px;
-  border-radius:100px;
-  padding-right:20px;
+  
 }
 
 .Moi{
@@ -35,7 +28,7 @@
   text-align:justify;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:768px){
 .aboutContainer{
   display: flex;
   flex-direction:column;
@@ -45,8 +38,5 @@
 .whoAmI{
   flex-direction:column;
 }
-.honor{
-  height:40vh;
-  width: 70vw;
-}
+
 }

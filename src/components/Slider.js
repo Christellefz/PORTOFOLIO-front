@@ -10,17 +10,17 @@ const Slider = () => {
     {
       id: 1,
       image: `${baseUrl}1.jpeg`,
-      text: 'Blabla 1 '
+      text: 'Photo 1 '
     },
     {
       id: 2,
       image: `${baseUrl}2.jpeg`,
-      text: 'Blabla 2'
+      text: 'Photo 2'
     },
     {
       id: 3,
       image: `${baseUrl}3.jpeg`,
-      text: 'Blabla 3'
+      text: 'Photo3'
     }
   ]
   return (

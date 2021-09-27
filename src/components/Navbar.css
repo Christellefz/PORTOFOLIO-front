@@ -18,7 +18,6 @@
   justify-content : flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-  list-style: none;
 }
 
 .navli {
@@ -35,7 +34,7 @@
 
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 768px){
 
   .header{
     display : none
