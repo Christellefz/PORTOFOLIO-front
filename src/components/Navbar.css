@@ -4,6 +4,7 @@
   color : white;
   display : flex;
   justify-content : flex-end;
+  flex-wrap: wrap;
 }
 .navItems{
   font-weight : bold;
@@ -23,7 +24,7 @@
 .navli {
   list-style : none;
   color : rgb(235, 202, 148);
-  padding : 15px;
+  padding : 15px !important;
   text-shadow : 5px 2px 0px rgb(61, 61, 61);
   
 }

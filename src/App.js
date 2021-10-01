@@ -16,7 +16,7 @@ const App = withRouter(({ location }) => {
       {location.pathname !== '/' && <Navbar />}
       {location.pathname !== '/' && <Bando />}
       <Switch>
-      <Route exact path='/'>
+        <Route exact path='/'>
           <Home />
         </Route>
         <Route exact path='/home'>

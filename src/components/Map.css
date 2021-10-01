@@ -16,7 +16,7 @@ width : 40vw;
   align-items: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 .blockform{
   display: flex;
   width :100vw;
